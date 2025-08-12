@@ -10,7 +10,7 @@ This guide will help you set up the documentation site locally, preview changes,
 
 ## 1. Clone the repository
 ```bash
-git clone https://github.com/ST10204902/mldl-bench.git
+git clone https://github.com/MLDL-Bench/mldl-bench.git
 cd mldl-bench
 ```
 
