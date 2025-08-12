@@ -1,0 +1,10 @@
+[package]
+name = "mldl-desktop"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+tauri = { version = "1" }
+
+[build-dependencies]
+tauri-build = { version = "1" }

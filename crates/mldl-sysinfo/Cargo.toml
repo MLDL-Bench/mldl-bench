@@ -1,0 +1,12 @@
+[package]
+name = "mldl-sysinfo"
+version = "0.0.1"
+edition = "2021"
+license = "Apache-2.0"
+
+[dependencies]
+mldl-types = { path = "../mldl-types" }
+sysinfo = { version = "0.33", features = ["serde"] }
+serde = { version = "1", features = ["derive"] }
+
+

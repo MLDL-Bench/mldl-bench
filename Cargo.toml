@@ -1,0 +1,14 @@
+[workspace]
+members = [
+    "crates/mldl-types",
+    "crates/mldl-sysinfo",
+    "crates/mldl-exec",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+version = "0.0.1"
+license = "Apache-2.0"
+
+

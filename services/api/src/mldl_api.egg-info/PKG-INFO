@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: mldl-api
+Version: 0.0.1
+Summary: MLDL Bench API
+Requires-Python: >=3.11
+Requires-Dist: fastapi>=0.111
+Requires-Dist: uvicorn[standard]>=0.30
+Requires-Dist: pydantic>=2.7
+Requires-Dist: pydantic-settings>=2.4
+Requires-Dist: sqlalchemy>=2.0
+Requires-Dist: aiosqlite>=0.20
+Requires-Dist: alembic>=1.13
