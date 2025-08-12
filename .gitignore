@@ -5,3 +5,10 @@ spec/
 spec-driver.json
 .github/instructions
 .github/copilot-instructions.md
+.kiro/
+target/
+**/.venv/
+**/__pycache__/
+services/api/data/
+node_modules/
+dist/

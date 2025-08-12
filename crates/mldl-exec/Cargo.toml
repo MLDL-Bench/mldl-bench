@@ -1,0 +1,15 @@
+[package]
+name = "mldl-exec"
+version = "0.0.1"
+edition = "2021"
+license = "Apache-2.0"
+
+[dependencies]
+mldl-types = { path = "../mldl-types" }
+thiserror = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1", features = ["serde", "v4"] }
+
+

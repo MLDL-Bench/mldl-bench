@@ -1,5 +1,26 @@
 # Getting Started
 
+### Prerequisites
+
+- Rust toolchain (stable)
+- Python 3.11+
+- `uv` (or `pip`/`venv`)
+
+### Build Rust workspace
+
+```bash
+cargo build --workspace
+```
+
+### Run API locally
+
+```bash
+cd services/api
+uv venv && uv pip install -e .
+alembic upgrade head
+uvicorn app.main:app --reload
+```
+
 Welcome to the **ML Bench Leaderboard** project!  
 This guide will help you set up the documentation site locally, preview changes, and contribute effectively.
 
