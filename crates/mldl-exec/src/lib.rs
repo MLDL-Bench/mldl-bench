@@ -13,6 +13,8 @@ pub enum ExecError {
     Collect(String),
     #[error("sign failed: {0}")]
     Sign(String),
+    #[error("submit failed: {0}")]
+    Submit(String),
 }
 
 pub trait BenchmarkRunner {
@@ -33,6 +35,18 @@ impl ResultSigner for NopSigner {
             signature: "insecure-dev-signature".to_string(),
         })
     }
+}
+
+/// Interface for submitting a signed benchmark result to a backend.
+pub trait ResultSubmitter {
+    fn submit(&self, signed: &SignedResult) -> Result<(), ExecError>;
+}
+
+/// No-op submitter for development and tests.
+pub struct NopSubmitter;
+
+impl ResultSubmitter for NopSubmitter {
+    fn submit(&self, _signed: &SignedResult) -> Result<(), ExecError> { Ok(()) }
 }
 
 pub fn run_benchmark<R: BenchmarkRunner, S: ResultSigner>(

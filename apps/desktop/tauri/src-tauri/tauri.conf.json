@@ -1,0 +1,15 @@
+{
+  "package": {
+    "productName": "MLDL Bench",
+    "version": "0.0.1"
+  },
+  "tauri": {
+    "windows": [
+      {
+        "title": "MLDL Bench",
+        "width": 1024,
+        "height": 768
+      }
+    ]
+  }
+}
