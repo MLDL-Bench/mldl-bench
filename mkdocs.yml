@@ -1,0 +1,43 @@
+site_name: ML Bench Leaderboard
+site_description: Open source ML hardware benchmarking and leaderboards
+repo_url: https://github.com/ST10204902/mldl-bench
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.instant
+    - content.code.copy
+    - toc.integrate
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.details
+plugins:
+  - search
+  - mermaid2:
+      arguments:
+        theme: default
+        themeCSS: ''
+        fontFamily: 'trebuchet ms, verdana, arial'
+        startOnLoad: true
+        flowchart:
+          htmlLabels: false
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Architecture:
+    - Overview: architecture/system-overview.md
+    - Data Model: architecture/data-model.md
+    - Validation & Signing: architecture/validation-and-signing.md
+  - Requirements:
+    - Initial Scope: requirements/initial-scope.md
+  - ADRs:
+    - 0001 Record Architecture Decisions: adr/0001-record-architecture-decisions.md
